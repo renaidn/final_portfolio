@@ -39,11 +39,11 @@
 
 .menuRight,
 .menuLeft {
-  flex: 1;
+  width: 25%
 }
 
 .menuCenter {
-  flex: 2;
+  width: 50%;
 }
 
 @media screen and (max-width: 800px) {
@@ -53,9 +53,12 @@
   .submenu {
     gap: 0rem;
   }
-  .comma {
-    display: none;
+  .menuRight {
+    width: 100%;
   }
+  /* .comma {
+    display: none;
+  } */
 }
 
 .menuItem {

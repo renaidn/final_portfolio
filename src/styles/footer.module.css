@@ -17,14 +17,37 @@
   font-family: "Barlow-Bold";
 }
 
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 0.5rem; */
+}
+
+.link img {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .footer {
     flex-direction: column;
   }
   .subfooter {
     flex-direction: column;
+    gap: 0;
   }
   .comma {
     display: none;
+  }
+  .link {
+    width: 100%;
+    border-bottom: 1px dashed var(--mid-grey);
+    padding: 0.5rem 0;
+  }
+  .link img {
+    display: block;
+    height: 1rem;
+    width: auto;
   }
 }

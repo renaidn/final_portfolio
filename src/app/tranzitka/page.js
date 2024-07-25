@@ -78,7 +78,7 @@ export default function Project() {
           </div>
           <div className={`${styles.subsection2} ${styles.textFlexStart}`}>
             <div className={styles.textCol}>
-              <p style={{paddingLeft: '1.625rem'}}>
+              <p className={styles.specialPadding}>
                 I was requested to build around the logo that was provided
                 to me by the company, without making alterations. Its sleek
                 lines and bright color inspired the choice of color scheme,

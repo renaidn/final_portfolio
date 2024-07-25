@@ -17,59 +17,113 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  margin: 0 2rem;
+  padding: 0 2rem;
+  height: 100%;
+  width: 100%;
   /* background-color: aqua; */
 }
 
-.projectTitle {
+.projectYear {
+  height: 100%;
+  width: 25%;
+}
+
+.containerLeft {
+  width: 95%;
   display: flex;
   flex-direction: row;
-  /* gap: 1rem; */
-  flex: 1;
+  gap: 1rem;
 }
 
-.projectYear {
-  flex: 1;
+.projectTitle {
+  width: 25%;
 }
+
+
 
 .projectHeading {
-  flex: 2;
-  text-decoration: underline;
+  /* width: 50%; */
+  /* text-decoration: underline; */
   text-underline-offset: 0.25rem;
   color: var(--highlight-blue);
+  font-family: "Barlow-Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.containerCenter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .projectDescription {
-  flex: 2;
+  width: 50%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--mid-grey);
 }
 
-.projectDescription span {
-  display: flex;
-  width: 50%;
-}
 
 .projectTags {
   display: flex;
   flex-direction: row;
-  gap: 0.25rem;
-  flex: 1;
+  gap: 1rem;
+  width: 100%;
   height: fit-content;
 }
 
-.projectTags span:not(:last-child) {
-  border-right: 1px solid var(--highlight-blue);
-  padding-right: 0.5rem;
+.projectTags span {
+  color: var(--mid-grey);
 }
 
+.tag {
+  width: fit-content;
+}
+
+.mobileButton {
+  display: none;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--highlight-blue);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileButton span {
+  color: var(--light-grey);
+  text-transform: uppercase;
+}
+
+.mobileButton img {
+  height: 1rem;
+  width: auto;
+}
+
+/* .projectTags span:not(:last-child) {
+  border-right: 1px solid var(--highlight-blue);
+  padding-right: 0.5rem;
+} */
+
 @media screen and (max-width: 800px) {
-  .projectTags {
-    display: none;
+  .thumbnail {
+    flex-direction: column;
+    /* gap: 0.5rem; */
   }
-  .projectDescription span {
-    width: fit-content;
+
+  .containerCenter {
+    width: 100%;
   }
+
+  .projectDescription {
+    width: 100%;
+  }
+
+  .mobileButton {
+    display: flex;
+  }
+
   .projectTitle {
-    gap: 0.5rem;
+    width: 100%;
   }
 }
 

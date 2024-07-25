@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/projectItem.module.css";
 import Carousel from "./carousel"; // Import the Carousel component
 import { useRouter } from "next/navigation";
 
 const ProjectItem = ({ project, showTooltip, hideTooltip, process }) => {
   const router = useRouter();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 800);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
 
   const handleClick = () => {
-    router.push(`/${project.id}`);
+    if (!isMobile) {
+      router.push(`/${project.id}`);
+    }
   };
 
   return (
@@ -45,20 +61,34 @@ const ProjectItem = ({ project, showTooltip, hideTooltip, process }) => {
       <Carousel slides={project.slides} />
       <div className={styles.thumbnail}>
         <div className={styles.projectTitle}>
-          <span className={styles.projectYear}>{project.year}</span>
           <span className={`${styles.projectHeading} ${styles.hackerEffect}`}>
             {project.title}
           </span>
         </div>
-        <div className={styles.projectDescription}>
-          <span>{project.description}</span>
+        <div className={styles.containerCenter}>
+          <div className={styles.projectDescription}>
+            <span>{project.description}</span>
+          </div>
+          <div className={styles.projectTags}>
+            {project.tags.map((tag) => (
+              <span key={tag} className={styles.tag}>
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className={styles.projectTags}>
-          {project.tags.map((tag) => (
-            <span key={tag} className={styles.tag}>
-              {tag}
-            </span>
-          ))}
+        <div className={styles.projectYear}>{project.year}</div>
+        <div
+          className={styles.mobileButton}
+          onClick={process ? null : () => router.push(`/${project.id}`)}
+          data-tooltip={
+            process
+              ? `case study in process`
+              : `view case study: ${project.title}`
+          }
+        >
+          <span>View Case Study</span>
+          <img src="/icons/bi_arrow-right-white.svg" alt="arrow" />
         </div>
       </div>
     </div>
