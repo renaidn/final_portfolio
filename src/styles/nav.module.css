@@ -46,6 +46,18 @@
   flex: 2;
 }
 
+@media screen and (max-width: 800px) {
+  .menuCenter {
+    display: none;
+  }
+  .submenu {
+    gap: 0rem;
+  }
+  .comma {
+    display: none;
+  }
+}
+
 .menuItem {
   position: relative;
   display: flex;
@@ -113,4 +125,3 @@
 .menuItem:hover {
   transition-duration: 0.1s;
 }
-

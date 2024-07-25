@@ -4,7 +4,8 @@ const projectsData = [
       title: 'Tranzitka',
       year: '2023',
       description: 'Designing a website and establishing a cohesive brand identity for a sports retail store.',
-      tags: ['Web Design', '|', 'Branding'],
+      tags: ['Web Design', 'Branding'],
+      // tags: ['Web Design', '|', 'Branding'],
       slides: [
         { url: '/images/projects/tranzitka/carousel/page1.png', alt: 'Tranzitka Product Page' },
         { url: '/images/projects/tranzitka/carousel/page2.png', alt: 'Tranzitka Index Page' },
@@ -70,7 +71,8 @@ const projectsData = [
       title: 'Choices They Make',
       year: '2024',
       description: 'A web-based game that merges the intrigue of an escape room with the urgency of digital privacy concerns.',
-      tags: ['Capstone Project', '|', 'Web Design', '|', 'Web Game'],
+      tags: ['Capstone Project','Web Design', 'Web Game'],
+      // tags: ['Capstone Project', '|', 'Web Design', '|', 'Web Game'],
       slides: [
         { url: '/images/projects/capstone/carousel/page1.png', alt: 'Tranzitka Product Page' },
         { url: '/images/projects/capstone/carousel/page2.png', alt: 'Tranzitka Index Page' },
@@ -92,7 +94,7 @@ const projectsData = [
       title: 'Center for Artificial Intelligence and Robotics',
       year: '2023',
       description: 'Designing a logo for a university research center.',
-      tags: ['Logo Design', '|', 'Branding'],
+      tags: ['Logo Design', 'Branding'],
       slides: [
         { url: '/images/projects/cair/carousel/page1.png', alt: 'Tranzitka Product Page' },
         { url: '/images/projects/cair/carousel/page2.png', alt: 'Tranzitka Index Page' },

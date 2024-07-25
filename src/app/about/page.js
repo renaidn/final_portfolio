@@ -89,28 +89,31 @@ export default function Home() {
               I'm a product designer currently based in the UAE, specializing in
               UX/UI design, browser-based game development, graphic design, and
               branding.
-              </p>
-              <p>
+            </p>
+            <p>
               Recently, I collaborated with a university psychology lab to
               design and gamify an online platform for psychology experiments.
               This project involved enhancing user interaction and data
               collection through engaging game mechanics, creating a more
               interactive and effective research tool.
-              </p>
-              <p>
+            </p>
+            <p>
               Currently, I am interested in:
               <ul className={styles.list}>
                 <li>
-                Crafting practical designs that improve daily interactions.
+                  Crafting practical designs that improve daily interactions.
                 </li>
                 <li>
-                Exploring gamification strategies to increase user involvement and loyalty.
+                  Exploring gamification strategies to increase user involvement
+                  and loyalty.
                 </li>
               </ul>
             </p>
           </div>
           <div className={styles.container}>
-            <div className={styles.heading}>Education</div>
+            <div className={styles.heading + " " + styles.education}>
+              Education
+            </div>
             <AboutItem
               title="Education"
               hasColumns={true}

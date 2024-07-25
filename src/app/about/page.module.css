@@ -2,10 +2,10 @@
   height: 100vh; /* Adjust based on your needs, e.g., full page or just part of it */
   width: 100%;
   background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.1) 1px, /* Line color and width */
-      transparent 1px,
-      transparent 16px /* Gutter size */
+    to right,
+    rgba(0, 0, 0, 0.1) 1px,
+    /* Line color and width */ transparent 1px,
+    transparent 16px /* Gutter size */
   );
   background-size: calc(100% / 12) 100%; /* Creates 12 columns */
   position: absolute;
@@ -89,4 +89,13 @@
 
 .contact span {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+  .education {
+    margin-top: 1rem;
+  }
 }

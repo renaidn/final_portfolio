@@ -10,8 +10,8 @@
 }
 
 .project:not(:last-child) {
-    border-bottom: 1px dashed var(--highlight-blue);
-  }
+  border-bottom: 1px dashed var(--highlight-blue);
+}
 
 .thumbnail {
   display: flex;
@@ -22,43 +22,55 @@
 }
 
 .projectTitle {
-    display: flex;
-    flex-direction: row;
-    /* gap: 1rem; */
-    flex: 1;
+  display: flex;
+  flex-direction: row;
+  /* gap: 1rem; */
+  flex: 1;
 }
 
 .projectYear {
-    flex: 1;
+  flex: 1;
 }
 
 .projectHeading {
-    flex: 2;
-    text-decoration: underline;
-    text-underline-offset: 0.25rem;
-    color: var(--highlight-blue);
+  flex: 2;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  color: var(--highlight-blue);
 }
 
 .projectDescription {
-    flex: 2;
+  flex: 2;
 }
 
 .projectDescription span {
-    display: flex;
-    width: 50%;
+  display: flex;
+  width: 50%;
 }
 
 .projectTags {
-    display: flex;
-    flex-direction: row;
-    gap: 0.25rem;
-    flex: 1;
-    height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  flex: 1;
+  height: fit-content;
 }
 
 .projectTags span:not(:last-child) {
-    border-right: 1px solid var(--highlight-blue);
-    padding-right: 0.5rem;
+  border-right: 1px solid var(--highlight-blue);
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .projectTags {
+    display: none;
+  }
+  .projectDescription span {
+    width: fit-content;
+  }
+  .projectTitle {
+    gap: 0.5rem;
+  }
 }
 
 /* Add additional CSS based on your initial snippet */

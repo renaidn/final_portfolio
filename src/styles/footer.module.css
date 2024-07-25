@@ -16,3 +16,15 @@
 .subfooter span {
   font-family: "Barlow-Bold";
 }
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+  .subfooter {
+    flex-direction: column;
+  }
+  .comma {
+    display: none;
+  }
+}

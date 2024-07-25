@@ -70,7 +70,7 @@ const Nav = ({ isProjectPage, isAboutPage }) => {
               <HackerEffect text="Resume" />
             </Link>
 
-            <span className="hacker-effect">,</span>
+            <span className={styles.comma}>,</span>
 
             <Link href="mailto:adina.renaidn@gmail.com">
               <HackerEffect text="Email" />
