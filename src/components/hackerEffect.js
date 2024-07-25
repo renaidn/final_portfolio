@@ -39,7 +39,7 @@ const HackerEffect = ({ text }) => {
         } else {
           iteration++;
         }
-      }, 40);
+      }, 250 / text.length);
       if (iteration > text.length) {
         clearInterval(interval);
         // done = false;

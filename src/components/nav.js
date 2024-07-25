@@ -11,13 +11,13 @@ const Nav = ({ isProjectPage, isAboutPage }) => {
   const getLeftMenuItems = () => {
     if (isProjectPage) {
       return (
-        <div className={styles.menuItem}>
-          <Link href="/">
+        <Link href="/">
+          <div className={styles.menuItem}>
             <img src="/icons/bi_arrow-left.svg" alt="Back to Index" />
             {/* <span className="hacker-effect">Back to Index</span> */}
-            <HackerEffect text="Back to Index" />
-          </Link>
-        </div>
+            <HackerEffect text="Back" />
+          </div>
+        </Link>
       );
     } else {
       return (

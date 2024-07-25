@@ -85,15 +85,29 @@ export default function Home() {
         <div className={styles.column}>
           <div className={styles.container}>
             <div className={styles.heading}>About</div>
-            <AboutItem
-              hasColumns={false}
-              text="In my journey through Interactive Media, Psychology, and Design, I've discovered that a product's aesthetics are inseparable from its functional performance. I believe that a well-designed product not only looks good but also works seamlessly, enhancing users' daily lives. This philosophy is the essence of my design approach.
-              I'm convinced that aesthetics go beyond surface-level appeal. They deeply influence how people connect with and benefit from products. Beautiful design can elevate experiences, ignite joy, and boost overall satisfaction.
-              To live up to this belief, I embrace a multidisciplinary approach. I steer clear of limiting myself to a single design style, always eager to explore a wide array of possibilities. This mindset fuels my ongoing experiments and infuses fresh perspectives and innovative solutions into each project.
-              I'm continuously dedicated to expanding my knowledge horizons, constantly seeking to broaden my creative skills and tackle any obstacles head-on. With unwavering determination and a deep passion for user-centric design, I'm excited to make a lasting impact in the world of product design.
-              Yours sincerely,
-              Adina Maratkyzy"
-            />
+            <p>
+              I'm a product designer currently based in the UAE, specializing in
+              UX/UI design, browser-based game development, graphic design, and
+              branding.
+              </p>
+              <p>
+              Recently, I collaborated with a university psychology lab to
+              design and gamify an online platform for psychology experiments.
+              This project involved enhancing user interaction and data
+              collection through engaging game mechanics, creating a more
+              interactive and effective research tool.
+              </p>
+              <p>
+              Currently, I am interested in:
+              <ul className={styles.list}>
+                <li>
+                Crafting practical designs that improve daily interactions.
+                </li>
+                <li>
+                Exploring gamification strategies to increase user involvement and loyalty.
+                </li>
+              </ul>
+            </p>
           </div>
           <div className={styles.container}>
             <div className={styles.heading}>Education</div>
