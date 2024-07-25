@@ -1,0 +1,19 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#1E1E1E"/>
+<g id="about">
+<rect width="1440" height="1024" transform="translate(-1264 -638)" fill="white"/>
+<g id="Frame 9">
+<g id="Frame 7">
+<g id="carbon:arrow-up-right" clip-path="url(#clip0_0_1)">
+<path id="Vector" d="M3.2 0V1.6H13.272L0 14.872L1.128 16L14.4 2.728V12.8H16V0H3.2Z" fill="black"/>
+</g>
+<path d="M16 29H-344V31H16V29Z" fill="#D3D3D3" mask="url(#path-1-inside-1_0_1)"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

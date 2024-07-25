@@ -1,0 +1,12 @@
+.tooltip {
+    position: fixed;
+    pointer-events: none;
+    transition: opacity 0.4s, transform 0.2s ease-in-out;
+    z-index: 1000;
+    background-color: var(--highlight-blue);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    margin: 0.5rem 1.25rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }

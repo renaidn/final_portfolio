@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url("/fonts/Barlow-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow-Bold";
+  src: url("/fonts/Barlow-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow-SemiBold";
+  src: url("/fonts/BarlowSemiCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow-Black";
+  src: url("/fonts/BarlowBlack.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Linguistics-Pro";
+  src: url("/fonts/LinguisticsPro.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+:root {
+  --highlight-blue: #002bc7;
+  --light-grey: #e6e6e6;
+  --mid-grey: #bcb8d2;
+  --active-orange: #d64330;
+  --background: #fefff8;
+  --black: #0b0b0c;
+}
+
+:root {
+  --color-bg1: #eae9e3;
+  --color-bg2: #fefff8;
+  --color1: 18, 113, 255;
+  --color2: 221, 74, 255;
+  --color3: 100, 220, 255;
+  --color4: 200, 50, 50;
+  --color5: 180, 180, 50;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 50%;
+  --blending: hard-light;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--highlight-blue);
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Barlow-Regular", sans-serif;
+  /* margin: 1rem; */
+  background-color: var(--background);
+  max-width: 1440px;
+  margin: 0 auto;
+  line-height: 1.35;
+  /* padding: 1rem; */
+  /* color:aqua; */
+}
+
+span,
+p,
+h1,
+h2,
+h3 {
+  color: var(--highlight-blue);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Barlow-Regular";
+  font-weight: 900;
+  font-size: 20rem;
+  letter-spacing: -0.25rem;
+  width: 100%;
+  line-height: 80%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  width: 50%;
+  font-weight: 400;
+}
+
+/* .hacker-effect {
+  color: var(--highlight-blue);
+} */
+
+/* .padding {
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.margin {
+  margin: 1rem 2rem;
+  box-sizing: border-box;
+} */
+
+a:hover {
+  cursor: pointer;
+}
