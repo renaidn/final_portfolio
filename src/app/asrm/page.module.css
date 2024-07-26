@@ -151,21 +151,9 @@
   flex: 2;
 }
 
-/* .darkBackground {
-  background-color: #090A2D;
-}
 
-.darkBackground p, .darkBackground span {
-  color: var(--light-grey);
-}
 
-.darkBackground .textCol span {
-  border-color: var(--light-grey);
-} */
-
-/*  */
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   .sectionContainer {
     flex-direction: column;
     height: auto;

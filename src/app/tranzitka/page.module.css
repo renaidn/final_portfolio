@@ -141,7 +141,7 @@
   padding-left: 0.625rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   .sectionContainer {
     flex-direction: column;
     height: auto;
