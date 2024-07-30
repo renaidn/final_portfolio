@@ -35,22 +35,22 @@
     gap: 0.25rem;
 }
 
-/* .column:first-child {
-    flex: 0.25;
+.column:first-child {
+    flex: 0.30;
 }
 
 .column:last-child {
-    flex: 0.75;
-} */
+    flex: 0.70;
+}
 
 .organization {
-    font-family: "Barlow-Bold";
-    text-transform: uppercase;
+    /* font-family: "Barlow-Bold"; */
+    /* text-transform: uppercase; */
     /* font-size: 1.25rem; */
 }
 
 .position {
-    font-family: "Barlow-Regular";
+    font-family: "Barlow-Bold";
     /* font-size: 1.25rem; */
 }
 

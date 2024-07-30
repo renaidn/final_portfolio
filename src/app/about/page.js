@@ -111,6 +111,11 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.container}>
+            <div className={styles.heading}>Interests</div>
+          </div>
+        </div>
+        <div className={styles.column}>
+          <div className={styles.container}>
             <div className={styles.heading + " " + styles.education}>
               Education
             </div>
@@ -123,8 +128,6 @@ export default function Home() {
               text="Minors in Psychology and Design"
             />
           </div>
-        </div>
-        <div className={styles.column}>
           <div className={styles.container}>
             <div className={styles.heading}>Experience</div>
             {experienceData.map((experience, ind) => (
@@ -138,6 +141,43 @@ export default function Home() {
                 text={experience.text}
               />
             ))}
+          </div>
+          <div className={styles.container}>
+            <div className={styles.heading}>Skills</div>
+            <div className={styles.skills}>
+              <div className={styles.skillsCategory}>Prototyping</div>
+              <div className={styles.skillsList}>
+                <span>Figma</span>
+                <span>Adobe XD</span>
+              </div>
+            </div>
+            <div className={styles.skills}>
+              <div className={styles.skillsCategory}>Graphic Design</div>
+              <div className={styles.skillsList}>
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+                <span>After Effects</span>
+              </div>
+            </div>
+            <div className={styles.skills}>
+              <div className={styles.skillsCategory}>Frontend</div>
+              <div className={styles.skillsList}>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>p5.js</span>
+              </div>
+            </div>
+            <div className={styles.skills}>
+              <div className={styles.skillsCategory}>Multimedia</div>
+              <div className={styles.skillsList}>
+                <span>Premiere Pro</span>
+                <span>Pro Tools</span>
+                <span>Audacity</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

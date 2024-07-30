@@ -14,13 +14,16 @@ const AboutItem = ({
       return (
         <>
           <div className={styles.container}>
+            
             <div className={styles.column}>
-              <span className={styles.organization}>{organization}</span>
+    
               <span className={styles.timeframe}>{timeframe}</span>
             </div>
             <div className={styles.column}>
               <span className={styles.position}>{position}</span>
-              <p className={styles.textGrey}>{text}</p>
+            <span className={styles.organization}>{organization}</span>
+              
+              {/* <p className={styles.textGrey}>{text}</p> */}
             </div>
           </div>
         </>
@@ -30,10 +33,10 @@ const AboutItem = ({
         <>
           <div className={styles.container2}>
             <div className={styles.column}>
-              <span className={styles.organization}>{organization}</span>
               <span className={styles.timeframe}>{timeframe}</span>
             </div>
             <div className={styles.column}>
+              <span className={styles.organization}>{organization}</span>
               <span className={styles.position}>{position}</span>
               <p className={styles.textGrey}>{text}</p>
             </div>
