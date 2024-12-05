@@ -6,7 +6,7 @@ const PlaygroundItem = ({ project }) => {
 
   return (
     <div>
-      <im
+      
     </div>
   );
 };
