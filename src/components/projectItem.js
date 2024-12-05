@@ -64,20 +64,22 @@ const ProjectItem = ({ project, showTooltip, hideTooltip, process }) => {
           <span className={`${styles.projectHeading} ${styles.hackerEffect}`}>
             {project.title}
           </span>
+          <div className={styles.projectYear}>
+            <span>{project.year}</span>
+          </div>
         </div>
         <div className={styles.containerCenter}>
           <div className={styles.projectDescription}>
             <span>{project.description}</span>
           </div>
-          <div className={styles.projectTags}>
+        </div>          
+        <div className={styles.projectTags}>
             {project.tags.map((tag) => (
               <span key={tag} className={styles.tag}>
                 {tag}
               </span>
             ))}
           </div>
-        </div>
-        <div className={styles.projectYear}>{project.year}</div>
         <div
           className={styles.mobileButton}
           onClick={process ? null : () => router.push(`/${project.id}`)}

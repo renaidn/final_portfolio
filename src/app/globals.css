@@ -33,6 +33,20 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Melodrama-Variable";
+  src: url("/fonts/Melodrama-Variable.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stretch-Pro";
+  src: url("/fonts/StretchPro.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --highlight-blue: #002bc7;
   --light-grey: #e6e6e6;
@@ -79,6 +93,7 @@ body {
 }
 
 body {
+  width: 100vw;
   font-family: "Barlow-Regular", sans-serif;
   /* margin: 1rem; */
   background-color: var(--background);
@@ -98,19 +113,24 @@ h3 {
 }
 
 h1 {
-  text-transform: uppercase;
-  font-family: "Barlow-Regular";
+  font-family: "Linguistics-Pro";
   font-weight: 900;
-  font-size: 20rem;
-  letter-spacing: -0.25rem;
+  font-size: 3rem;
   width: 100%;
-  line-height: 80%;
+  line-height: 100%;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   width: 50%;
+  font-weight: 900;
+  font-family: "Linguistics-Pro";
+}
+
+h3 {
+  font-size: 2rem;
   font-weight: 400;
+  font-family: "Linguistics-Pro";
 }
 
 /* .hacker-effect {
@@ -129,4 +149,14 @@ h2 {
 
 a:hover {
   cursor: pointer;
+}
+
+.emptySpace {
+  height: 6rem;
+}
+
+@media screen and (max-width: 800px) {
+  .emptySpace {
+    height: 3rem;
+  }
 }

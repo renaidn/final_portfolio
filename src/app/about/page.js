@@ -13,7 +13,7 @@ import GradientBackground from "../../components/gradientBg";
 import AboutItem from "../../components/aboutItem";
 import experienceData from "./../experienceData";
 import GridBackground from "../../components/gridBg";
-
+import Link from "next/link";
 // import Tooltip from "../components/tooltip.client";
 
 export default function Home() {
@@ -32,89 +32,107 @@ export default function Home() {
   };
 
   return (
-    <>
+    <section className={styles.aboutSection}>
       <Head>
         <title>Adina Maratkyzy</title>
         <script src="/scripts.js"></script>
       </Head>
       <GridBackground />
       <Nav isProjectPage={false} isAboutPage={true} />
-      <div className={styles.about}>
-        <div className={styles.column3}>
+      <div className="emptySpace"></div>
+      <div className={styles.gridContainer}>
+        <div className={styles.gridItem}>
           <img
-            src="/images/headshot2.jpg"
+            src="/images/IMG_1854.JPG"
             alt="headshot"
-            width={300}
-            height={300}
             className={styles.headshot}
           />
-          <div
-            className={styles.contact}
-            onClick={() =>
-              window.open("mailto:adina.renaidn@gmail.com", "_blank")
-            }
-          >
+          <div className={styles.contactContainer} id={styles.contacts}>
+            <Link href="https://www.instagram.com/adina.maratkyzy/" target="_blank" className={styles.link}>
+              <span>adina.renaidn@gmail.com</span>
+              <img src="/icons/arrow-link.svg" alt="cooking" />
+            </Link>
+            <Link href="https://drive.google.com/file/d/1ODBw1CXIABjKpHb79a9UNgAEIk79dcmN/view?usp=sharing" target="_blank" className={styles.link}>
+              <span>CV</span>
+              <img src="/icons/arrow-link.svg" alt="cooking" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/adina-maratkyzy-0b6b8b1a5/" target="_blank" className={styles.link}>
+              <span>Linkedin</span>
+              <img src="/icons/arrow-link.svg" alt="cooking" />
+            </Link>
+            <Link href="https://t.me/adina_maratkyzy" target="_blank" className={styles.link}>
+              <span>Telegram</span>
+              <img src="/icons/arrow-link.svg" alt="cooking" />
+            </Link>
+          </div>
+        </div>
+        <div className={`${styles.gridItem} ${styles.greeting}`}>
+          <div className={styles.container}>
+            <span className={styles.greetingText}>Hello!</span>
+            <p>
+              I'm a UAE-based product designer specializing in UX/UI, web
+              experiences, and graphic design.
+            </p>
+            <p>
+              I’ve developed gamified platforms for research, crafted
+              user-centered designs for websites and apps, led social media
+              campaigns, and produced engaging visual content for digital
+              platforms, always with a focus on improving user experience and
+              engagement.
+            </p>
+            <p>
+              I'm currently seeking opportunities to craft practical designs that
+              enhance daily interactions!
+            </p>
+            <span className={styles.greetingText}>
+            Want to get to know me a bit better? Here are some random facts!            </span>
+          </div>
+        </div>
+        <div className={`${styles.gridItem} ${styles.gridItemEmpty}`} id={styles.empty1}>
+          
+        </div>
+        {/* <div className={styles.gridItem} id={styles.contacts}>
+          <Link href="https://www.instagram.com/adina.maratkyzy/" target="_blank" className={styles.link}>
             <span>adina.renaidn@gmail.com</span>
-            <img src="/icons/arrow-link.svg" alt="email" />
-          </div>
-          <div
-            className={styles.contact}
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/1ODBw1CXIABjKpHb79a9UNgAEIk79dcmN/view?usp=sharing",
-                "_blank"
-              )
-            }
-          >
+            <img src="/icons/arrow-link.svg" alt="cooking" />
+          </Link>
+          <Link href="https://drive.google.com/file/d/1ODBw1CXIABjKpHb79a9UNgAEIk79dcmN/view?usp=sharing" target="_blank" className={styles.link}>
             <span>CV</span>
-            <img src="/icons/arrow-link.svg" alt="cv" />
-          </div>
-          <div
-            className={styles.contact}
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/adina-maratkyzy-0b6b8b1a5/",
-                "_blank"
-              )
-            }
-          >
+            <img src="/icons/arrow-link.svg" alt="cooking" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/adina-maratkyzy-0b6b8b1a5/" target="_blank" className={styles.link}>
             <span>Linkedin</span>
-            <img src="/icons/arrow-link.svg" alt="linkedin" />
+            <img src="/icons/arrow-link.svg" alt="cooking" />
+          </Link>
+          <Link href="https://t.me/adina_maratkyzy" target="_blank" className={styles.link}>
+            <span>Telegram</span>
+            <img src="/icons/arrow-link.svg" alt="cooking" />
+          </Link>
+        </div> */}
+        <div className={`${styles.gridItem} ${styles.gridItemEmpty}`} id={styles.empty2}>
+          
+          </div>
+        <div className={styles.gridItem}>
+          <div className={styles.container}>
+            
+            <p>In my free time, I enjoy trying out new recipes I find online and sharing them with friends. I love hosting casual get-togethers where everyone can dig into something homemade.</p>
+            <p>I also love to read. While I don’t have a single favorite book, <i>The Kite Runner</i>, <i>Master and Margarita</i>, and <i>A Little Life</i> have left the strongest impressions on me. These days, I’m into contemporary fiction and am trying to make it a habit to write reviews on the books I finish.</p>
+            <p>When I’m not cooking or reading, my activity of choice is hiking, yoga, or swimming.</p>
+            <p>Looking ahead, I have a list of five hobbies I’d love to try (and hopefully pick up) before I turn 25: surfing, sewing, playing the violin, archery, and dancing.</p>
+            <p>I’m always up for a good conversation, so feel free to reach out!</p>
           </div>
         </div>
-        <div className={styles.column}>
-          <div className={styles.container}>
-            <div className={styles.heading}>About</div>
-            <p>
-              I'm a product designer currently based in the UAE, specializing in
-              UX/UI design, browser-based game development, graphic design, and
-              branding.
-            </p>
-            <p>
-              Recently, I collaborated with a university psychology lab to
-              design and gamify an online platform for psychology experiments.
-              This project involved enhancing user interaction and data
-              collection through engaging game mechanics, creating a more
-              interactive and effective research tool.
-            </p>
-            <p>
-              Currently, I am interested in:
-              <ul className={styles.list}>
-                <li>
-                  Crafting practical designs that improve daily interactions.
-                </li>
-                <li>
-                  Exploring gamification strategies to increase user involvement
-                  and loyalty.
-                </li>
-              </ul>
-            </p>
+        <div className={`${styles.gridItem} ${styles.gridItemEmpty}`} id={styles.empty3}>
+          
           </div>
-          <div className={styles.container}>
-            <div className={styles.heading}>Interests</div>
-          </div>
+        <div className={styles.gridItem}>
+          <img src="/images/recipes/hummus.png" alt="hummus" id={styles.cookingImg}/>
+          <Link href="/cookbook" className={styles.link} id={styles.cookbookLink}>
+            <span>Checkout my online cookbook</span>
+            <img src="/icons/arrow-link.svg" alt="cooking" />
+          </Link>
         </div>
-        <div className={styles.column}>
+        {/* <div className={styles.column}>
           <div className={styles.container}>
             <div className={styles.heading + " " + styles.education}>
               Education
@@ -179,7 +197,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Tooltip
@@ -187,6 +205,6 @@ export default function Home() {
         position={tooltip.position}
         visible={tooltip.visible}
       />
-    </>
+    </section>
   );
 }

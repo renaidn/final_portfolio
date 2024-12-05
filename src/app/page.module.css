@@ -65,6 +65,10 @@
   text-transform: uppercase;
 }
 
+.emptySpace {
+  height: 6rem;
+}
+
 .projects {
   display: flex;
   flex-direction: column;

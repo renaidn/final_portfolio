@@ -1,0 +1,70 @@
+.tortPlayContainer {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Optional: Adjust spacing */
+    gap: 18rem; /* Space between text and the image */
+    /* background-color: #f8f8f8; */
+    height: 50vh;
+    position: relative;
+}
+  
+.tortPlayTitle {
+    color: var(--highlight-blue);
+    /* text-transform: uppercase; */
+    font-family: "Linguistics-Pro";
+    /* font-weight: 800; */
+    font-size: 8rem;
+}
+  
+.tortPlay {
+    padding-top: 5rem;
+    height: 100%; /* Scale the image height */
+    width: auto; /* Keep the aspect ratio */
+    object-fit: contain; /* Ensures the entire image fits */
+    position: absolute;
+}
+  
+
+.runningLineContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap;
+  width: 100%; /* Full width of container */
+  background-color: #f8f8f8; /* Optional: Add a background */
+  border: 1px solid #ddd; /* Optional: Add a border */
+  position: relative;
+}
+
+.runningLine {
+    display: inline-block; /* Keep text in one line */
+    white-space: nowrap; 
+    animation: scroll 5s linear infinite; /* Infinite scrolling animation */
+}
+
+.runningLine span {
+  font-family: "Stretch-Pro";
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+.runningLine span:nth-child(n+2) {
+  margin-left: 10rem;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0%); /* Start off-screen */
+    }
+    to {
+      /* transform: translateX(-150rem); */
+    }
+  }
+
+.menuContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 3fr;
+  gap: 2rem;
+  padding: 2rem;
+}

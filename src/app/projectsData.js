@@ -2,9 +2,9 @@ const projectsData = [
     {
       id: 'tranzitka',
       title: 'Tranzitka',
-      year: '2023',
-      description: 'Designing a website and establishing a cohesive brand identity for a sports retail store.',
-      tags: ['#Web Design', '#Branding'],
+      year: '[2023]',
+      description: 'Designing a website for a sports retail store.',
+      tags: ['E-Commerce', 'Web Design'],
       // tags: ['Web Design', '|', 'Branding'],
       slides: [
         { url: '/images/projects/tranzitka/carousel/page1.png', alt: 'Tranzitka Product Page' },
@@ -25,9 +25,9 @@ const projectsData = [
     {
       id: 'asrm',
       title: 'ASRM',
-      year: '2022',
+      year: '[2022]',
       description: 'Simplifying the discovery of medical events for healthcare professionals through an app.',
-      tags: ['#App Design'],
+      tags: ['App Design'],
       slides: [
         { url: '/images/projects/asrm/carousel/page1.png', alt: 'Tranzitka Product Page' },
         { url: '/images/projects/asrm/carousel/page2.png', alt: 'Tranzitka Index Page' },
@@ -47,9 +47,9 @@ const projectsData = [
     {
       id: 'pptp',
       title: 'Active Cognition Lab',
-      year: '2024',
-      description: 'Designed a gamified online platform for psychology experiments.',
-      tags: ['#Web Design'],
+      year: '[2024]',
+      description: 'Designing a gamified online platform for psychology experiments.',
+      tags: ['Web Design'],
       slides: [
         { url: '/images/projects/pptp/carousel/page1.png', alt: 'Tranzitka Product Page' },
         { url: '/images/projects/pptp/carousel/page2.png', alt: 'Tranzitka Index Page' },
@@ -69,9 +69,9 @@ const projectsData = [
     {
       id: 'capstone',
       title: 'Choices They Make',
-      year: '2024',
-      description: 'A web-based game that merges the intrigue of an escape room with the urgency of digital privacy concerns.',
-      tags: ['#Capstone Project','#Web Design', '#Web Game'],
+      year: '[2024]',
+      description: 'Creating a web-based game that merges the intrigue of an escape room with the urgency of digital privacy concerns.',
+      tags: ['Capstone Project','Web Design', 'Web Game'],
       // tags: ['Capstone Project', '|', 'Web Design', '|', 'Web Game'],
       slides: [
         { url: '/images/projects/capstone/carousel/page1.png', alt: 'Tranzitka Product Page' },
@@ -91,10 +91,10 @@ const projectsData = [
     },
     {
       id: 'cair',
-      title: 'Center for Artificial Intelligence and Robotics',
-      year: '2023',
+      title: 'CAIR',
+      year: '[2023]',
       description: 'Designing a logo for a university research center.',
-      tags: ['#Logo Design', '#Branding'],
+      tags: ['Logo Design', 'Branding'],
       slides: [
         { url: '/images/projects/cair/carousel/page1.png', alt: 'Tranzitka Product Page' },
         { url: '/images/projects/cair/carousel/page2.png', alt: 'Tranzitka Index Page' },

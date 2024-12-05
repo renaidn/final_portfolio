@@ -1,0 +1,262 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0.25rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* overflow: hidden; */
+  }
+  
+  .modalContent {
+    background: var(--background);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 90%;
+    max-width: 75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: scroll;
+    /* overflow: hidden; */
+  }
+
+  .modalHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 2rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .headerSection {
+    flex: 1;
+  }
+
+  .headerSection:nth-child(2) {
+    /* flex: 1.5; */
+  }
+
+  .recipeTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* width: 40%; */
+  }
+
+  .modalControls {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-bottom: 2rem;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+  
+  .modalClose {
+    position: absolute;
+    /* top: 10px;
+    right: 15px; */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: var(--background);
+    border: 1px solid var(--highlight-blue);
+  }
+
+  .modalBody {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* overflow: hidden; */
+  }
+
+  .modalSection {
+    flex: 1;
+  }
+
+  #bodyLeft {
+    flex: 2;
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .bodyLeftTop {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .bodyLeftBottom {
+    flex: 1;
+    /* width: 75%; */
+  }
+
+  #bodyRight {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+
+  .modalBodyLeft {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* overflow: scroll; */
+  }
+
+  .modalBodyRight {
+    width: 65%;
+    /* overflow: scroll; */
+  }
+
+  .ingredientsBox {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 7.5rem; */
+    /* gap: 1rem; */
+    border: 1px solid var(--mid-grey);
+    position: sticky;
+    top: 4rem; 
+    right: 0;
+    /* width: 100%; */
+  }
+
+  .modalContainer {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    padding: 1rem 0;
+  }
+
+  #titleContainer {
+    border-bottom: 1px solid var(--mid-grey);
+    padding: 1.5rem 1rem 0.5rem 1rem;
+  }
+
+  .modalTitle {
+    font-size: 2rem;
+    font-family: "Barlow-Bold";
+    width: 100%;
+  }
+
+  .ingredientGroupTitle {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-family: "Barlow-Bold";
+  }
+
+  .ingredientGroupTitle {
+    /* border-bottom: 1px solid var(--light-grey); */
+  }
+
+  .ingredientsContainer:first-child {
+    padding-bottom: 2rem;
+  }
+
+  #timeContainer {
+    padding-top: 1rem;
+  }
+
+  .lineBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+  }
+
+  .lineBoxLeft {
+  }
+
+  .lineBoxRight {
+    width: 30%;
+  }
+
+  #totalTimeContainer {
+    border-top: 1px solid var(--light-grey);
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .modalTimeContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #totalTime {
+    font-family: "Barlow-Bold";
+  }
+
+  #modalImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+  }
+
+  .modalDirections {
+    border: 1px solid var(--mid-grey);
+    /* padding: 1rem; */
+  }
+  
+  .directionStep {
+    width: 100%;
+    /* background-color: var(--light-grey); */
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.5rem;
+    font-family: "Barlow-Bold";
+  }
+
+  .modalDirections ol {
+    list-style-type: none;
+    /* margin-top: 1rem; */
+  }
+  
+  .modalDirections ul {
+    list-style-type: disc;
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+    /* margin-top: 1rem; */
+  }
+  
+  .modalDirections li {
+    
+    margin-bottom: 0rem;
+  }
+  
+.recipeImage {
+    /* margin: 4rem; */
+    margin-top: 8rem;
+}
+
+.recipeImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+  

@@ -4,6 +4,9 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  padding: 1rem;
+  /* border: 1px solid var(--highlight-blue); */
+  background-color: var(--highlight-blue);
 }
 
 .slider::before,

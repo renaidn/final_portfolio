@@ -1,54 +1,123 @@
-.grid {
-  height: 100vh; /* Adjust based on your needs, e.g., full page or just part of it */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 0.5fr); 
+  gap: 1rem 2rem;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  height: 100%;
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.1) 1px,
-    /* Line color and width */ transparent 1px,
-    transparent 16px /* Gutter size */
-  );
-  background-size: calc(100% / 12) 100%; /* Creates 12 columns */
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none; /* Makes sure clicks pass through to elements below */
 }
 
-.about {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  padding: 2rem;
-  height: calc(100vh - 6rem);
-  /* background-color: azure; */
-}
-
-.column3 {
-  flex: 1;
+.gridItem {
+  width: 100%;
+  height: 40rem;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* background-color: azure; */
+  object-fit: cover;
   /* gap: 0.5rem; */
 }
 
-.column2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.gridItem:nth-child(n+3) {
+  height: 100%;
 }
 
-.column {
-  flex: 1;
+.gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headshot {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#images {
   display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  /* justify-content: space-between; */
+  flex-direction: row;
+  /* align-items: flex-end; */
+  gap: 2rem;
+}
+
+#images img {
+  width: calc(50% - 1rem);
+  height: 10%;
+  object-fit: cover;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+.images {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.images img {
+  width: calc(50% - 1rem);
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* background-color: azure; */
+}
+
+.greetingText {
+  font-size: 1.5rem;
+  font-family: "Barlow-Bold";
+  padding-top: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  /* gap: 0.5rem; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 1.5rem;
+  border: 1px solid var(--highlight-blue);
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  background-color: #FFFFE6;
+  letter-spacing: 0.25rem;
+  font-family: "Barlow-Bold";
+  cursor: pointer;
+}
+
+.link img {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+#contacts .link {
+  border-top: none;
+}
+
+#contacts .link:first-child {
+  border-top: 1px solid var(--highlight-blue);
 }
 
 .heading {
@@ -65,10 +134,7 @@
   margin-bottom: 0.5rem;
 }
 
-.headshot {
-  width: 100%;
-  height: auto;
-}
+
 
 .contact {
   display: flex;
@@ -97,38 +163,59 @@
   padding-top: 0.5rem;
 }
 
-.skills {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+#cookingImg {
   width: 100%;
-  border-bottom: 1px dashed var(--light-grey);
-  padding-bottom: 0.5rem;
+  object-fit: contain;
 }
 
-.skillsCategory {
-  flex: 0.30;
+#cookbookLink {
+  margin-top: 1rem;
 }
 
-.skillsList {
-  flex: 0.70;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+#empty1, #empty2 {
+  display: block;
 }
 
-.skillsList span {
-  border: 1px solid var(--light-grey);
-  padding: 0.25rem 1rem;
-  border-radius: 10rem;
+#empty3 {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+  }
+
+  #empty1 {
+    display: none;
+  }
+
+  #empty2, #empty3 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .about {
-    flex-direction: column;
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 0.5rem;
   }
-  .education {
-    margin-top: 1rem;
+
+  #empty1, #empty2, #empty3 {
+    display: none;
+  }
+
+  .greeting {
+    justify-content: flex-start;
+  }
+
+  .gridItem {
+    height: fit-content;
+  }
+
+  .headshot {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }

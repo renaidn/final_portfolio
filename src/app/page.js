@@ -10,6 +10,7 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import Tooltip from "../components/tooltip";
 import GradientBackground from "../components/gradientBg";
+import "./globals.css";
 
 export default function Home() {
   const [tooltip, setTooltip] = useState({
@@ -51,6 +52,7 @@ export default function Home() {
         <script src="/scripts.js"></script>
       </Head>
       <Nav isProjectPage={false} isAboutPage={false} />
+      <div className="emptySpace"></div>
       <div className={styles.projects}>
         {projectsData.map((project, index) => (
           <ProjectItem
