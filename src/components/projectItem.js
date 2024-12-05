@@ -90,7 +90,7 @@ const ProjectItem = ({ project, showTooltip, hideTooltip, process }) => {
           }
         >
           <span>View Case Study</span>
-          <img src="/icons/bi_arrow-right-white.svg" alt="arrow" />
+          <img src="/icons/bi_arrow-right.svg" alt="arrow" />
         </div>
       </div>
     </div>
